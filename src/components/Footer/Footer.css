@@ -1,0 +1,16 @@
+.footer-container{
+    background-color: #232F3E;
+    padding: 80px 0px 0px 20px; 
+    font-family: 'Lato', sans-serif;   
+}
+.footer-container a{
+    color: #D7DDC8;
+}
+.backTo{
+    text-align: center;
+    background-color: #485769;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Lato', sans-serif;
+}

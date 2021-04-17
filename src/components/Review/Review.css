@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
+.review-main-part{
+    border-bottom: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    padding: 5px 5px;
+}
+.review-single-part{
+    padding: 10px 0px 0px 10px;
+}
+.review-text-area{
+    padding: 35px 0px 0px 60px;
+    font-family: 'Kiwi Maru', serif;
+}
+.review-text-area h4{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600; 
+}
+.review-text-area span{
+    font-size: 17px;
+    font-weight: 600;
+    color: darkred;
+}
+.review-text-area h6{
+    font-size: 17px;
+    color: chocolate;
+    font-weight: 700;
+}

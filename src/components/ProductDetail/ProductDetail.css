@@ -1,0 +1,51 @@
+.productDetail-category{
+    text-transform: capitalize;
+    font-size: 38px;
+    font-weight: 200;    
+    font-family: 'Lato', sans-serif;
+}
+.productDetail-image-part{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.productDetail-img{
+    height: 300px;
+}
+.productDetail-text-part{
+    margin-top: 50px;
+}
+.productDetail-text-part h4{
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 200;
+    color: dimgray;    
+    font-family: 'Lato', sans-serif;
+}
+.productDetail-span{
+    font-size: large;
+    font-weight: 400;
+    color: black;
+    
+}
+.productDetail-text-part h5{
+    font-size: x-large;
+    font-weight: 800;
+    color: chocolate;
+}    
+.productDetail-price-stock{
+    margin-bottom: 20px;
+}
+.productDetail-description{
+    width: 400px;    
+}
+.productDetail-description-left{    
+    font-size: 18px;
+    font-weight: 700;
+    color: darkslategray; 
+  }
+  .productDetail-description-right{
+    font-size: 18px;    
+    color: coral;
+    font-family: 'Lato', sans-serif;
+
+  }

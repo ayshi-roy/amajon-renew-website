@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+.login-container{
+    
+}
+.login-system{
+    margin-top: 15px;
+}
+
+.google{
+    border : 1px solid lightgrey;
+    padding: 6px 80px 5px 4px;
+    border-radius: 23px; 
+    cursor: pointer; 
+}
+.google .google-img{
+    height: 35px;
+}
+.google h5{
+    margin-left: 90px;
+    font-size: 26px;
+    font-weight: 800;   
+    background: linear-gradient(to right,#EA4335, #FBBC04, #34A853,#4285F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .7s linear;
+    font-family: 'Roboto Slab', serif;
+}
+.google h5:hover{
+    background: linear-gradient(to right,#4285F4,#34A853,#FBBC04,#EA4335);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .7s linear; 
+        
+}
+.Input-form{
+    border : 1px solid lightgrey;
+    padding: 15px 20px 10px 20px;
+    width: 380px;
+    /* height: 350px; */
+    border-radius:20px;
+}
+.input-field{
+    margin-top: 15px;
+}
+.amajon-Logo{
+    height: 36px;
+}
+.input-h-text{
+    background: linear-gradient(to right,#01305A,#00569F,#006CC6,#0090F1,#00AFFE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.submit-btn{
+    width: 339px;
+    padding: 5px 5px;
+    color: white;
+    background: linear-gradient(to right,#01305A,#00569F,#006CC6,#0090F1,#00AFFE);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: 'Roboto Slab', serif;
+}

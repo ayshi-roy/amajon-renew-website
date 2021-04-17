@@ -1,0 +1,61 @@
+.delivery-detail{
+    margin-top: 50px;
+}
+.delivery-header-text{
+    border-bottom: 2px solid grey;
+    padding-bottom: 4px;
+    width: 440px;
+}
+.delivery-header-text h1{
+    font-size: 25px;
+    font-weight: 400;
+    color: darkred;
+    font-family: 'Lato', sans-serif;
+}
+.order-receive h1{
+    font-size: 39px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+.order-receive p{
+    font-size: 20px;
+    font-weight: 300;
+    color: darkorange;
+    font-family: 'Lato', sans-serif;
+}
+.order-receive h2{
+    font-weight: 800;
+    color: crimson;
+    font-family: 'Lato', sans-serif;
+}
+.order-receive img{
+    height: 100px;
+}
+.delivery-detail textarea.input-field.form-control{
+    color: black;
+    font-weight: 700;
+    font-size: large;
+    background-color: beige;
+    background-clip: padding-box;
+    border: none;
+}
+.delivery-detail input.input-field.form-control{
+    color: black;
+    font-weight: 700;
+    font-size: large;
+    background-color: beige;
+    background-clip: padding-box;
+    border: none;
+}
+
+.delivery-submit-btn{
+    width: 445px;
+    padding: 5px 5px;
+    color: white;
+    background: linear-gradient(to right,black,#880015,#EE2711,#FF7F27,#FFC90E,#EFE4B0);
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: 'Roboto Slab', serif; 
+}
