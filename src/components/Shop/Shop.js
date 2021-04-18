@@ -7,31 +7,26 @@ import { Link } from 'react-router-dom';
 
 
 const Shop = ({cart,handleAddProduct,search}) => {
-    // console.log(fakeData);
-    // const first9 = fakeData.slice(0, 9);
-    // const [allProduct, setAllProduct] = useState(first9); 
-    // console.log(allProduct);
+    
     const first9 = fakeData.slice(0, 9);               
     const [allProduct, setAllProduct] = useState([]);
-    const [demo, setDemo] = useState(false)
-    console.log(demo);
 
     useEffect(() =>{
         if(!search.searching){ 
-            setAllProduct(first9) 
-        }
+            setAllProduct(first9); 
+        }        
         else{
             const searchProduct = fakeData.filter(pd => pd.category === search.searchName);               
-            setAllProduct(searchProduct);    
+            setAllProduct(searchProduct);
         }
         
-    },[search])
+    },[search.searchName])
     
 
     
     return (
         <div>
-            <Container fluid className="" style={{backgroundColor: '#DEE6E9'}}>
+            <Container fluid style={{backgroundColor: '#DEE6E9'}}>
                 <Row>
                     <Col lg={9}>
                         <Row style={{position: 'relative'}}>{

@@ -1,20 +1,24 @@
 import React, { useContext, useState } from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
-import { UserContext } from '../../App';
+import { CartContext, UserContext } from '../../App';
 import NavbarPart2 from '../Header/NavbarPart2';
 import { useForm } from 'react-hook-form';
 import delivery from '../../images/delivery.png';
 import './Shipment.css';
+import { processOrder } from '../../utilities/databaseManager';
 
 const Shipment = () => {
 
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [loggedInUser] = useContext(UserContext);
+    const [setCart] = useContext(CartContext);
     const { register, handleSubmit,formState: { errors }, reset } = useForm();
 
     const [placeOrder, setPlaceOrder] = useState(false);
 
     const onSubmit = (data) => {
         setPlaceOrder(true);
+        processOrder();
+        setCart([]);
         console.log(data);
         reset();
     }

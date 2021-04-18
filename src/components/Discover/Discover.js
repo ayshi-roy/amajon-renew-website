@@ -10,6 +10,7 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 const Discover = () => {  
 
     SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+    
     return (
         <div className="pb-5 pt-5">
             <Swiper 

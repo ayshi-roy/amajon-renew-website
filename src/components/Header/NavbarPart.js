@@ -4,9 +4,7 @@ import usa from '../../images/usa.png';
 import './NavbarPart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart,faSearch } from '@fortawesome/free-solid-svg-icons'
-import { Image,Nav,Navbar,NavDropdown,Form,Button,FormControl,InputGroup,Dropdown,DropdownButton } from 'react-bootstrap';
-import { faAlignJustify } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Image,Nav,Navbar,NavDropdown,Button,FormControl,InputGroup,Dropdown,DropdownButton } from 'react-bootstrap';
 
 
 
@@ -39,7 +37,7 @@ const NavbarPart = ({handleSearch,cart}) => {
                             </DropdownButton>
                             <FormControl
                                 onBlur={handleSearch}
-                                placeholder="search"
+                                placeholder="search product category"
                                 aria-label="Recipient's username"
                                 aria-describedby="basic-addon2"
                                 style={{width:'500px'}}
@@ -57,9 +55,7 @@ const NavbarPart = ({handleSearch,cart}) => {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown> 
                         <Nav.Link href="#home">
-                            <Link className="linkTo" to="/login">
-                                <small>Hello Sign In </small><span><b>Account & List</b></span>
-                            </Link>
+                            <small>Hello Sign In </small><span><b>Account & List</b></span>
                         </Nav.Link>
                         <Nav.Link href="#link"><small>Returns  </small><span><b> & Order</b></span></Nav.Link> 
                         <Nav.Link href="#home"><span style={{fontWeight: 'bold'}} className="text-danger">{cart.length}</span><FontAwesomeIcon icon={faShoppingCart} style={{fontSize:'25px'}}/></Nav.Link>                   

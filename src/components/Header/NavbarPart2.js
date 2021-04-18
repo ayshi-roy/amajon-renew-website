@@ -3,7 +3,7 @@ import './NavbarPart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAlignJustify } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { Image,Nav,Navbar,NavDropdown,Form,Button,FormControl,InputGroup,Dropdown,DropdownButton } from 'react-bootstrap';
+import {Nav,Navbar } from 'react-bootstrap';
 
 // import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -26,8 +26,8 @@ const NavbarPart2 = () => {
                     <Nav className="mr-auto">
                         <Nav.Link className="pl-3"><Link className="linkTo" to="/home">Home</Link></Nav.Link>
                         <Nav.Link className="pl-3"><Link className="linkTo" to="/review">Review Orders</Link></Nav.Link>                                               
-                        <Nav.Link className="pl-3">Gift Cards</Nav.Link>
-                        <Nav.Link className="pl-3">Sell</Nav.Link>
+                        <Nav.Link className="pl-3"><Link className="linkTo" to="/login">Log In</Link></Nav.Link>
+                        <Nav.Link className="pl-3"><Link className="linkTo" to="/shipment">Shipment</Link></Nav.Link>
                         <Nav.Link className="pl-3">Registry</Nav.Link>                
                     </Nav>
                     <Nav className="ml-auto">                        
@@ -57,10 +57,7 @@ const NavbarPart2 = () => {
                             <Nav.Link href="#home" className="pl-3">
                                 Amazon's response to <b>COVID-19</b>
                             </Nav.Link>    
-                          }   
-                        
-                        
-                        
+                          }  
                     </Nav>                
                 </Navbar.Collapse>
             </Navbar>

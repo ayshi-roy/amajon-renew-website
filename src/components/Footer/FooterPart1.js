@@ -3,16 +3,9 @@ import { Col, Container, Row } from 'react-bootstrap';
 import footerFakeData from '../../fakeData/footerFakeData';
 import './Footer.css';
 
-// const componentDidMount = () => {
-//     window.scroll({
-//         top: document.body.offsetHeight,
-//         left: 0, 
-//         behavior: 'smooth',
-//       });
-// }
-
 
 const FooterPart1 = () => {
+
     const [visible, setVisible] = useState(false)
   
     const toggleVisible = () => {

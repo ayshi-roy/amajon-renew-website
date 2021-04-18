@@ -1,7 +1,6 @@
 import React from 'react';
 import Rating from '@material-ui/lab/Rating';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import StarRating from 'react-star-rating';
 import { Col,Image,Button, Card } from 'react-bootstrap';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';

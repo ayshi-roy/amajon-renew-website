@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { CartContext } from '../../App';
 import fakeData from '../../fakeData';
 import { addToDatabaseCart, getDatabaseCart } from '../../utilities/databaseManager';
 import CarouselPart from '../Carousel/CarouselPart';
@@ -7,7 +8,8 @@ import FooterMain from '../Footer/FooterMain';
 import Header from '../Header/Header';
 
 const Home = () => {
-    const [cart,setCart] = useState([]);
+    
+    const [cart,setCart] = useContext(CartContext);
 
     useEffect(()=>{
         const saveCart = getDatabaseCart();

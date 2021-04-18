@@ -30,7 +30,7 @@ const ProductDetail = () => {
                         </div>
                         <div className="productDetail-price-stock">
                             <h5> <span className="productDetail-span">Price :</span> ${singleProduct.price}</h5>
-                            <h5><span className="productDetail-span">shipping Price :</span> {singleProduct.shipping}</h5>
+                            <h5><span className="productDetail-span">shipping Price : </span>${singleProduct.shipping}</h5>
                             <h5><span className="productDetail-span">Stock :</span> {singleProduct.stock}</h5>
                         </div>                        
                         {

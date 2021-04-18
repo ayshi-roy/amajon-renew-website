@@ -19,41 +19,47 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
+export const CartContext = createContext();
+
 
 function App() {
 
   const [loggedInUser, setLoggedInUser] = useState({});
+  const [cart,setCart] = useState([]);
+  
   
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>      
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route path="/review">
-            <Review/>
-          </Route>
-          <PrivateRoute path="/shipment">
-            <Shipment/>
-          </PrivateRoute>
-          <Route path="/login">
-            <Login/>
-          </Route>
-          <Route path="/inventory">
-            <Inventory/>
-          </Route>
-          <Route path="/home">
-            <Home/>
-          </Route>
-          <Route path="/product/:productKey">
-            <ProductDetail/> 
-          </Route>                  
-          <Route path="*">
-            <NoMatch/>
-          </Route>
-        </Switch>        
-      </Router>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+      <CartContext.Provider value={[cart,setCart]}>      
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route path="/review">
+              <Review/>
+            </Route>
+            <PrivateRoute path="/shipment">
+              <Shipment/>
+            </PrivateRoute>
+            <Route path="/login">
+              <Login/>
+            </Route>
+            <Route path="/inventory">
+              <Inventory/>
+            </Route>
+            <Route path="/home">
+              <Home/>
+            </Route>
+            <Route path="/product/:productKey">
+              <ProductDetail/> 
+            </Route>                  
+            <Route path="*">
+              <NoMatch/>
+            </Route>
+          </Switch>        
+        </Router>
+      </CartContext.Provider> 
     </UserContext.Provider>
   );
 }
